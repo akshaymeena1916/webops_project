@@ -42,7 +42,7 @@ header p {
 #map {
     width: 90%;
     height: 70vh;
-    margin-top: 5rem;
+    margin-top: 3rem;
     border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     border: 3px solid #fff;
@@ -95,12 +95,12 @@ header p {
 /* Tracking Status Box - Positioned Below the Map */
 .tracking-status {
     position: fixed;  /* Fixes position so it doesn't overlap */
-    bottom: 10px;  /* Ensures it stays at the bottom */
+    bottom: 8px;  /* Ensures it stays at the bottom */
     left: 50%;
     transform: translateX(-50%);
     background: white;
     color: #27ae60;  /* Green for active tracking */
-    padding: 12px 24px;
+    padding: 10px 15px;
     font-size: 1rem;
     font-weight: bold;
     border-radius: 30px;
