@@ -1,0 +1,88 @@
+/* Base Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+header p {
+    margin: 0.2rem 0 0;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+/* Map Container */
+#map {
+    width: 95%;
+    height: 70vh;
+    margin: 1rem auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 2px solid #3498db;
+}
+
+/* Tracking Status */
+.tracking-status {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    z-index: 1000;
+    font-size: 0.8rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #eee;
+}
+
+.tracking-status.active {
+    color: #27ae60;
+}
+
+.tracking-status.error {
+    color: #e74c3c;
+}
+
+/* User Counter */
+#user-count {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    z-index: 1000;
+    font-size: 0.8rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #map {
+        height: 60vh;
+        width: 98%;
+    }
+
+    header h1 {
+        font-size: 1.4rem;
+    }
+}
