@@ -92,13 +92,14 @@ header p {
 }
 /* Tracking Status Box */
 /* Tracking Status Box - Positioned Below the Map */
+/* Tracking Status Box - Positioned Below the Map */
 .tracking-status {
-    position: absolute;
-    bottom: 20px; /* Positioned at the bottom */
+    position: fixed;  /* Fixes position so it doesn't overlap */
+    bottom: 10px;  /* Ensures it stays at the bottom */
     left: 50%;
     transform: translateX(-50%);
     background: white;
-    color: #27ae60; /* Green for active tracking */
+    color: #27ae60;  /* Green for active tracking */
     padding: 12px 24px;
     font-size: 1rem;
     font-weight: bold;
@@ -112,6 +113,16 @@ header p {
 
 /* Error Style */
 .tracking-status.error {
-    color: #e74c3c; /* Red for errors */
+    color: #e74c3c;  /* Red for errors */
     border-color: #e74c3c;
+}
+
+/* 📌 Responsive Fix for Mobile */
+@media (max-width: 768px) {
+    .tracking-status {
+        width: 80%;  /* Adjust width to fit smaller screens */
+        font-size: 0.9rem;  /* Slightly smaller text */
+        padding: 10px;  /* Reduce padding */
+        bottom: 15px;  /* Keep it above the bottom of the screen */
+    }
 }
